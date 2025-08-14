@@ -22,9 +22,10 @@
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link active" data-lang="nav_home">Home</a></li>
+                    <li><a href="services.html" class="nav-link" data-lang="nav_services">Services</a></li>
+                    <li><a href="#about" class="nav-link" data-lang="nav_about">About</a></li>
+                    <li><a href="contact.html" class="nav-link" data-lang="nav_contact">Contact</a></li>
                 </ul>
                 <div class="mobile-menu-btn">
                     <span></span>
@@ -39,27 +40,27 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>Welcome to Intel Computer</h2>
-                <p>Your one-stop destination for all computer needs in Kadam Chowk, Janakapur, Dhanusha. We provide quality computers, expert repair services, and reliable technical support.</p>
+                <h2 data-lang="hero_welcome">Welcome to Intel Computer</h2>
+                <p data-lang="hero_description">Your one-stop destination for all computer needs in Kadam Chowk, Janakapur, Dhanusha. We provide quality computers, expert repair services, and reliable technical support.</p>
                 
                 <div class="new-offer">
-                    <h3>New Offer!</h3>
-                    <p>We deal all kinds of Laptop, Desktops, Printers, CCTV camera, Air conditioners and Networking services at Intel Computer.</p>
+                    <h3 data-lang="new_offer_title">New Offer!</h3>
+                    <p data-lang="new_offer_description">We deal all kinds of Laptop, Desktops, Printers, CCTV camera, Air conditioners and Networking services at Intel Computer.</p>
                     <div class="offer-features">
                         <div class="offer-feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Hassle free doorstep sales & services.</span>
+                            <span data-lang="offer_feature_1">Hassle free doorstep sales & services.</span>
                         </div>
                         <div class="offer-feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Free consultation for sales and repairing.</span>
+                            <span data-lang="offer_feature_2">Free consultation for sales and repairing.</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="hero-buttons">
-                    <a href="services.html" class="btn btn-primary">Our Services</a>
-                    <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                    <a href="services.html" class="btn btn-primary" data-lang="btn_our_services">Our Services</a>
+                    <a href="contact.html" class="btn btn-secondary" data-lang="btn_get_in_touch">Get in Touch</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -74,35 +75,64 @@
     <!-- Services Overview -->
     <section class="services-overview">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
+            <h2 class="section-title" data-lang="services_title">Our Services</h2>
             <div class="services-grid">
                 <div class="service-card" data-aos="fade-up">
                     <div class="service-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <h3>Computer Sales</h3>
-                    <p>Wide range of desktop computers, laptops, and accessories from top brands at competitive prices.</p>
+                    <h3 data-lang="service_computer_sales">Computer Sales</h3>
+                    <p data-lang="service_computer_sales_desc">Wide range of desktop computers, laptops, and accessories from top brands at competitive prices.</p>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Repair & Maintenance</h3>
-                    <p>Expert computer repair services, hardware upgrades, and regular maintenance to keep your system running smoothly.</p>
+                    <h3 data-lang="service_repair">Repair & Maintenance</h3>
+                    <p data-lang="service_repair_desc">Expert computer repair services, hardware upgrades, and regular maintenance to keep your system running smoothly.</p>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-keyboard"></i>
                     </div>
-                    <h3>Accessories</h3>
-                    <p>Complete range of computer accessories including keyboards, mice, monitors, and more.</p>
+                    <h3 data-lang="service_accessories">Accessories</h3>
+                    <p data-lang="service_accessories_desc">Complete range of computer accessories including keyboards, mice, monitors, and more.</p>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon">
                         <i class="fas fa-wifi"></i>
                     </div>
-                    <h3>Networking Solutions</h3>
-                    <p>Professional networking setup, WiFi installation, and network troubleshooting services.</p>
+                    <h3 data-lang="service_networking">Networking Solutions</h3>
+                    <p data-lang="service_networking_desc">Professional networking setup, WiFi installation, and network troubleshooting services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about-us">
+        <div class="container">
+            <h2 class="section-title" data-lang="about_title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-message" data-lang="about_message">10 Intel computer experience with public, best sales & services, INGOs, NGOs, and Government.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-star"></i>
+                            <span data-lang="about_experience">10+ Years of Experience</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-handshake"></i>
+                            <span data-lang="about_ingos">Trusted by INGOs & NGOs</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-building"></i>
+                            <span data-lang="about_government">Government Partnership</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-icon">
+                    <i class="fas fa-award"></i>
                 </div>
             </div>
         </div>
@@ -111,15 +141,15 @@
     <!-- Why Choose Us -->
     <section class="why-choose-us">
         <div class="container">
-            <h2 class="section-title">Why Choose Us?</h2>
+            <h2 class="section-title" data-lang="why_choose_title">Why Choose Us?</h2>
             <div class="features-grid">
                 <div class="feature-item" data-aos="fade-right">
                     <div class="feature-icon">
                         <i class="fas fa-medal"></i>
                     </div>
                     <div class="feature-content">
-                        <h3>Quality Assurance</h3>
-                        <p>We only work with trusted brands and provide warranty on all our products and services.</p>
+                        <h3 data-lang="feature_quality">Quality Assurance</h3>
+                        <p data-lang="feature_quality_desc">We only work with trusted brands and provide warranty on all our products and services.</p>
                     </div>
                 </div>
                 <div class="feature-item" data-aos="fade-left">
@@ -127,8 +157,8 @@
                         <i class="fas fa-clock"></i>
                     </div>
                     <div class="feature-content">
-                        <h3>Quick Service</h3>
-                        <p>Fast turnaround time for repairs and immediate assistance for urgent technical issues.</p>
+                        <h3 data-lang="feature_quick">Quick Service</h3>
+                        <p data-lang="feature_quick_desc">Fast turnaround time for repairs and immediate assistance for urgent technical issues.</p>
                     </div>
                 </div>
                 <div class="feature-item" data-aos="fade-right">
@@ -136,8 +166,8 @@
                         <i class="fas fa-users"></i>
                     </div>
                     <div class="feature-content">
-                        <h3>Expert Team</h3>
-                        <p>Certified technicians with years of experience in computer hardware and software.</p>
+                        <h3 data-lang="feature_expert">Expert Team</h3>
+                        <p data-lang="feature_expert_desc">Certified technicians with years of experience in computer hardware and software.</p>
                     </div>
                 </div>
                 <div class="feature-item" data-aos="fade-left">
@@ -145,8 +175,8 @@
                         <i class="fas fa-headset"></i>
                     </div>
                     <div class="feature-content">
-                        <h3>24/7 Support</h3>
-                        <p>Round-the-clock customer support for all your technical queries and emergencies.</p>
+                        <h3 data-lang="feature_support">24/7 Support</h3>
+                        <p data-lang="feature_support_desc">Round-the-clock customer support for all your technical queries and emergencies.</p>
                     </div>
                 </div>
             </div>
@@ -158,8 +188,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Computer Sales & Services</h3>
-                    <p>Your trusted partner for all computer needs in Kadam Chowk, Janakapur, Dhanusha.</p>
+                    <h3 data-lang="footer_about">Computer Sales & Services</h3>
+                    <p data-lang="footer_description">Your trusted partner for all computer needs in Kadam Chowk, Janakapur, Dhanusha.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/IntelElectronic/#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -167,22 +197,23 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-lang="quick_links">Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#home" data-lang="nav_home">Home</a></li>
+                        <li><a href="services.html" data-lang="nav_services">Services</a></li>
+                        <li><a href="#about" data-lang="nav_about">About</a></li>
+                        <li><a href="contact.html" data-lang="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h4 data-lang="contact_info">Contact Info</h4>
                     <p><i class="fas fa-map-marker-alt"></i> Kadam Chowk, Janakapur, Dhanusha</p>
                                          <p><i class="fas fa-phone"></i> +977-980-1668511</p>
                      <p><i class="fas fa-envelope"></i> intelcomputersnepal@gmail.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Computer Sales & Services. All rights reserved.</p>
+                <p data-lang="copyright">&copy; 2024 Computer Sales & Services. All rights reserved.</p>
             </div>
         </div>
     </footer>
