@@ -1010,6 +1010,124 @@ html {
     cursor: not-allowed;
 }
 
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--light-gray);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.language-toggle:hover {
+    border-color: var(--primary-color);
+    background: var(--white);
+}
+
+.language-toggle.nepali {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.language-toggle.english {
+    border-color: var(--accent-color);
+    background: var(--accent-color);
+    color: var(--white);
+}
+
+.current-lang {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--white);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: var(--transition);
+    z-index: 1001;
+    margin-top: 0.5rem;
+}
+
+.language-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.language-option:last-child {
+    border-bottom: none;
+}
+
+.language-option:hover {
+    background: var(--light-gray);
+}
+
+.lang-flag {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.lang-name {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+/* Responsive Language Switcher */
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .language-toggle {
+        padding: 0.375rem 0.75rem;
+    }
+    
+    .current-lang {
+        font-size: 1rem;
+    }
+    
+    .language-dropdown {
+        min-width: 120px;
+        right: -0.5rem;
+    }
+    
+    .language-option {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
 /* Form Validation Styles */
 .form-group.error input,
 .form-group.error select,
